@@ -1,0 +1,1229 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Android">
+      <Configuration>Debug</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|iOS">
+      <Configuration>Debug</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-AnyCPU">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x64">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-x86">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows-ARM">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone 8">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|Windows Phone (Universal)">
+      <Configuration>Debug</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Android">
+      <Configuration>Release</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|iOS">
+      <Configuration>Release</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-AnyCPU">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x64">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-x86">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows-ARM">
+      <Configuration>Release</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone 8">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Windows Phone (Universal)">
+      <Configuration>Release</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Android">
+      <Configuration>Distribution</Configuration>
+      <Platform>Android</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|iOS">
+      <Configuration>Distribution</Configuration>
+      <Platform>iOS</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-AnyCPU">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-AnyCPU</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x64">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-x86">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-x86</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows-ARM">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows-ARM</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone 8">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone 8</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Distribution|Windows Phone (Universal)">
+      <Configuration>Distribution</Configuration>
+      <Platform>Windows Phone (Universal)</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>356249cc-defd-42f7-a3ff-cd15fa54873a</ProjectGuid>
+  </PropertyGroup>
+  <PropertyGroup>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '12.0'">
+    <VisualStudioVersion>12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <Content Include="scripts\start.js" />
+    <Content Include="templates\start.html" />
+    <Folder Include="images\" />
+    <Content Include="components\angular\angular2.js" />
+    <Content Include="components\angular\change_detection.js" />
+    <Content Include="components\angular\core.js" />
+    <Content Include="components\angular\di.js" />
+    <Content Include="components\angular\directives.js" />
+    <Content Include="components\angular\docs\change_detection\change_detection.md" />
+    <Content Include="components\angular\docs\change_detection\expressions.md" />
+    <Content Include="components\angular\docs\change_detection\record.md" />
+    <Content Include="components\angular\docs\core\00_index.md" />
+    <Content Include="components\angular\docs\core\01_templates.md" />
+    <Content Include="components\angular\docs\core\02_directives.md" />
+    <Content Include="components\angular\docs\core\03_formatters.md" />
+    <Content Include="components\angular\docs\core\04_decorator_directive.md" />
+    <Content Include="components\angular\docs\core\05_component_directive.md" />
+    <Content Include="components\angular\docs\core\06_viewport_directive.md" />
+    <Content Include="components\angular\docs\core\07_services.md" />
+    <Content Include="components\angular\docs\core\08_lifecycle.md" />
+    <Content Include="components\angular\docs\core\09_compilation.md" />
+    <Content Include="components\angular\docs\core\10_view.md" />
+    <Content Include="components\angular\docs\core\11_shadow_dom.md" />
+    <Content Include="components\angular\docs\core\12_zones.md" />
+    <Content Include="components\angular\docs\di\di.md" />
+    <Content Include="components\angular\e2e_test\perf_util.es6" />
+    <Content Include="components\angular\e2e_test\test_util.es6" />
+    <Content Include="components\angular\forms.js" />
+    <Content Include="components\angular\package.json" />
+    <Content Include="components\angular\pubspec.yaml" />
+    <Content Include="components\angular\README.md" />
+    <Content Include="components\angular\src\change_detection\abstract_change_detector.js" />
+    <Content Include="components\angular\src\change_detection\change_detection_jit_generator.dart" />
+    <Content Include="components\angular\src\change_detection\change_detection_jit_generator.es6" />
+    <Content Include="components\angular\src\change_detection\change_detection_util.js" />
+    <Content Include="components\angular\src\change_detection\coalesce.js" />
+    <Content Include="components\angular\src\change_detection\dynamic_change_detector.js" />
+    <Content Include="components\angular\src\change_detection\exceptions.js" />
+    <Content Include="components\angular\src\change_detection\interfaces.js" />
+    <Content Include="components\angular\src\change_detection\parser\ast.js" />
+    <Content Include="components\angular\src\change_detection\parser\context_with_variable_bindings.js" />
+    <Content Include="components\angular\src\change_detection\parser\lexer.js" />
+    <Content Include="components\angular\src\change_detection\parser\parser.js" />
+    <Content Include="components\angular\src\change_detection\pipes\array_changes.js" />
+    <Content Include="components\angular\src\change_detection\pipes\keyvalue_changes.js" />
+    <Content Include="components\angular\src\change_detection\pipes\null_pipe.js" />
+    <Content Include="components\angular\src\change_detection\pipes\pipe.js" />
+    <Content Include="components\angular\src\change_detection\pipes\pipe_registry.js" />
+    <Content Include="components\angular\src\change_detection\proto_change_detector.js" />
+    <Content Include="components\angular\src\core\annotations\annotations.js" />
+    <Content Include="components\angular\src\core\annotations\events.js" />
+    <Content Include="components\angular\src\core\annotations\template.js" />
+    <Content Include="components\angular\src\core\annotations\visibility.js" />
+    <Content Include="components\angular\src\core\application.js" />
+    <Content Include="components\angular\src\core\compiler\binding_propagation_config.js" />
+    <Content Include="components\angular\src\core\compiler\compiler.js" />
+    <Content Include="components\angular\src\core\compiler\directive_metadata.js" />
+    <Content Include="components\angular\src\core\compiler\directive_metadata_reader.js" />
+    <Content Include="components\angular\src\core\compiler\element_binder.js" />
+    <Content Include="components\angular\src\core\compiler\element_injector.js" />
+    <Content Include="components\angular\src\core\compiler\interfaces.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\compile_control.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\compile_element.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\compile_pipeline.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\compile_step.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\default_steps.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\directive_parser.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\element_binder_builder.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\element_binding_marker.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\property_binding_parser.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\proto_element_injector_builder.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\proto_view_builder.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\shadow_dom_transformer.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\text_interpolation_parser.js" />
+    <Content Include="components\angular\src\core\compiler\pipeline\view_splitter.js" />
+    <Content Include="components\angular\src\core\compiler\selector.js" />
+    <Content Include="components\angular\src\core\compiler\shadow_dom_emulation\content_tag.js" />
+    <Content Include="components\angular\src\core\compiler\shadow_dom_emulation\light_dom.js" />
+    <Content Include="components\angular\src\core\compiler\shadow_dom_emulation\shim_css.js" />
+    <Content Include="components\angular\src\core\compiler\shadow_dom_strategy.js" />
+    <Content Include="components\angular\src\core\compiler\template_loader.js" />
+    <Content Include="components\angular\src\core\compiler\template_resolver.js" />
+    <Content Include="components\angular\src\core\compiler\view.js" />
+    <Content Include="components\angular\src\core\compiler\view_container.js" />
+    <Content Include="components\angular\src\core\compiler\view_pool.js" />
+    <Content Include="components\angular\src\core\compiler\xhr\xhr.js" />
+    <Content Include="components\angular\src\core\compiler\xhr\xhr_impl.dart" />
+    <Content Include="components\angular\src\core\compiler\xhr\xhr_impl.es6" />
+    <Content Include="components\angular\src\core\dom\element.js" />
+    <Content Include="components\angular\src\core\events\event_manager.js" />
+    <Content Include="components\angular\src\core\events\hammer_common.js" />
+    <Content Include="components\angular\src\core\events\hammer_gestures.dart" />
+    <Content Include="components\angular\src\core\events\hammer_gestures.es6" />
+    <Content Include="components\angular\src\core\life_cycle\life_cycle.js" />
+    <Content Include="components\angular\src\core\zone\vm_turn_zone.dart" />
+    <Content Include="components\angular\src\core\zone\vm_turn_zone.es6" />
+    <Content Include="components\angular\src\directives\foreach.js" />
+    <Content Include="components\angular\src\directives\if.js" />
+    <Content Include="components\angular\src\directives\non_bindable.js" />
+    <Content Include="components\angular\src\directives\switch.js" />
+    <Content Include="components\angular\src\di\annotations.js" />
+    <Content Include="components\angular\src\di\binding.js" />
+    <Content Include="components\angular\src\di\exceptions.js" />
+    <Content Include="components\angular\src\di\injector.js" />
+    <Content Include="components\angular\src\di\key.js" />
+    <Content Include="components\angular\src\di\opaque_token.js" />
+    <Content Include="components\angular\src\facade\async.dart" />
+    <Content Include="components\angular\src\facade\async.es6" />
+    <Content Include="components\angular\src\facade\collection.dart" />
+    <Content Include="components\angular\src\facade\collection.es6" />
+    <Content Include="components\angular\src\facade\dom.dart" />
+    <Content Include="components\angular\src\facade\dom.es6" />
+    <Content Include="components\angular\src\facade\lang.dart" />
+    <Content Include="components\angular\src\facade\lang.es6" />
+    <Content Include="components\angular\src\facade\math.dart" />
+    <Content Include="components\angular\src\facade\math.es6" />
+    <Content Include="components\angular\src\forms\directives.js" />
+    <Content Include="components\angular\src\forms\model.js" />
+    <Content Include="components\angular\src\mock\xhr_mock.js" />
+    <Content Include="components\angular\src\reflection\reflection.dart" />
+    <Content Include="components\angular\src\reflection\reflection.es6" />
+    <Content Include="components\angular\src\reflection\reflection_capabilities.dart" />
+    <Content Include="components\angular\src\reflection\reflection_capabilities.es6" />
+    <Content Include="components\angular\src\reflection\reflector.js" />
+    <Content Include="components\angular\src\reflection\types.dart" />
+    <Content Include="components\angular\src\reflection\types.es6" />
+    <Content Include="components\angular\src\test_lib\benchmark_util.js" />
+    <Content Include="components\angular\src\test_lib\test_lib.dart" />
+    <Content Include="components\angular\src\test_lib\test_lib.es6" />
+    <Content Include="components\angular\src\test_lib\utils.js" />
+    <Content Include="components\angular\src\transform\annotation_processor.dart" />
+    <Content Include="components\angular\src\transform\codegen.dart" />
+    <Content Include="components\angular\src\transform\html_transform.dart" />
+    <Content Include="components\angular\src\transform\options.dart" />
+    <Content Include="components\angular\src\transform\resolvers.dart" />
+    <Content Include="components\angular\src\transform\transformer.dart" />
+    <Content Include="components\angular\src\transform\traversal.dart" />
+    <Content Include="components\angular\test\change_detection\array_changes_spec.js" />
+    <Content Include="components\angular\test\change_detection\change_detection_spec.js" />
+    <Content Include="components\angular\test\change_detection\coalesce_spec.js" />
+    <Content Include="components\angular\test\change_detection\iterable.dart" />
+    <Content Include="components\angular\test\change_detection\iterable.es6" />
+    <Content Include="components\angular\test\change_detection\keyvalue_changes_spec.js" />
+    <Content Include="components\angular\test\change_detection\parser\context_with_variable_bindings_spec.js" />
+    <Content Include="components\angular\test\change_detection\parser\lexer_spec.js" />
+    <Content Include="components\angular\test\change_detection\parser\parser_spec.js" />
+    <Content Include="components\angular\test\change_detection\transformer_registry_spec.js" />
+    <Content Include="components\angular\test\change_detection\util.js" />
+    <Content Include="components\angular\test\core\annotations\annotations_spec.js" />
+    <Content Include="components\angular\test\core\application_spec.js" />
+    <Content Include="components\angular\test\core\compiler\compiler_spec.js" />
+    <Content Include="components\angular\test\core\compiler\directive_metadata_reader_spec.js" />
+    <Content Include="components\angular\test\core\compiler\element_injector_spec.js" />
+    <Content Include="components\angular\test\core\compiler\integration_spec.js" />
+    <Content Include="components\angular\test\core\compiler\pipeline\directive_parser_spec.js" />
+    <Content Include="components\angular\test\core\compiler\pipeline\element_binder_builder_spec.js" />
+    <Content Include="components\angular\test\core\compiler\pipeline\element_binding_marker_spec.js" />
+    <Content Include="components\angular\test\core\compiler\pipeline\pipeline_spec.js" />
+    <Content Include="components\angular\test\core\compiler\pipeline\property_binding_parser_spec.js" />
+    <Content Include="components\angular\test\core\compiler\pipeline\proto_element_injector_builder_spec.js" />
+    <Content Include="components\angular\test\core\compiler\pipeline\proto_view_builder_spec.js" />
+    <Content Include="components\angular\test\core\compiler\pipeline\shadow_dom_transformer_spec.js" />
+    <Content Include="components\angular\test\core\compiler\pipeline\text_interpolation_parser_spec.js" />
+    <Content Include="components\angular\test\core\compiler\pipeline\view_splitter_spec.js" />
+    <Content Include="components\angular\test\core\compiler\selector_spec.js" />
+    <Content Include="components\angular\test\core\compiler\shadow_dom\content_tag_spec.js" />
+    <Content Include="components\angular\test\core\compiler\shadow_dom\light_dom_spec.js" />
+    <Content Include="components\angular\test\core\compiler\shadow_dom\shadow_dom_emulation_integration_spec.js" />
+    <Content Include="components\angular\test\core\compiler\shadow_dom\shim_css_spec.js" />
+    <Content Include="components\angular\test\core\compiler\template_loader_spec.js" />
+    <Content Include="components\angular\test\core\compiler\view_container_spec.js" />
+    <Content Include="components\angular\test\core\compiler\view_pool_spec.js" />
+    <Content Include="components\angular\test\core\compiler\view_spec.js" />
+    <Content Include="components\angular\test\core\events\event_manager_spec.js" />
+    <Content Include="components\angular\test\core\zone\vm_turn_zone_spec.js" />
+    <Content Include="components\angular\test\directives\foreach_spec.js" />
+    <Content Include="components\angular\test\directives\if_spec.js" />
+    <Content Include="components\angular\test\directives\non_bindable_spec.js" />
+    <Content Include="components\angular\test\directives\switch_spec.js" />
+    <Content Include="components\angular\test\di\async_spec.js" />
+    <Content Include="components\angular\test\di\injector_spec.js" />
+    <Content Include="components\angular\test\di\key_spec.js" />
+    <Content Include="components\angular\test\forms\integration_spec.js" />
+    <Content Include="components\angular\test\forms\model_spec.js" />
+    <Content Include="components\angular\test\mock\xhr_mock_spec.js" />
+    <Content Include="components\angular\test\reflection\reflector_spec.js" />
+    <Content Include="components\angular\test\test_lib\test_lib_spec.js" />
+    <Content Include="components\angular\test\transform\common.dart" />
+    <Content Include="components\angular\test\transform\common.html" />
+    <Content Include="components\angular\test\transform\ctor_with_default_value_files\bar.dart" />
+    <Content Include="components\angular\test\transform\ctor_with_default_value_files\expected\index.bootstrap.dart" />
+    <Content Include="components\angular\test\transform\ctor_with_default_value_files\index.dart" />
+    <Content Include="components\angular\test\transform\html_entry_point_files\expected\index.html" />
+    <Content Include="components\angular\test\transform\html_entry_point_files\index.dart" />
+    <Content Include="components\angular\test\transform\list_of_types_files\bar.dart" />
+    <Content Include="components\angular\test\transform\list_of_types_files\expected\index.bootstrap.dart" />
+    <Content Include="components\angular\test\transform\list_of_types_files\foo.dart" />
+    <Content Include="components\angular\test\transform\list_of_types_files\index.dart" />
+    <Content Include="components\angular\test\transform\simple_annotation_files\bar.dart" />
+    <Content Include="components\angular\test\transform\simple_annotation_files\expected\index.bootstrap.dart" />
+    <Content Include="components\angular\test\transform\simple_annotation_files\index.dart" />
+    <Content Include="components\angular\test\transform\synthetic_ctor_files\bar.dart" />
+    <Content Include="components\angular\test\transform\synthetic_ctor_files\expected\index.bootstrap.dart" />
+    <Content Include="components\angular\test\transform\synthetic_ctor_files\index.dart" />
+    <Content Include="components\angular\test\transform\transform_test.dart" />
+    <Content Include="components\angular\test\transform\two_deps_files\bar.dart" />
+    <Content Include="components\angular\test\transform\two_deps_files\expected\index.bootstrap.dart" />
+    <Content Include="components\angular\test\transform\two_deps_files\foo.dart" />
+    <Content Include="components\angular\test\transform\two_deps_files\index.dart" />
+    <Content Include="components\angular\test_lib.js" />
+    <Content Include="components\angular\transformer.dart" />
+    <Content Include="deps\es6-module-loader-sans-promises.js" />
+    <Content Include="deps\es6-module-loader-sans-promises.js.map" />
+    <Content Include="deps\es6-module-loader.js" />
+    <Content Include="deps\es6-module-loader.js.map" />
+    <Content Include="deps\long-stack-trace-zone.js" />
+    <Content Include="deps\rtts_assert.js" />
+    <Content Include="deps\rtts_assert.map" />
+    <Content Include="deps\system.js" />
+    <Content Include="deps\system.js.map" />
+    <Content Include="deps\traceur.js" />
+    <Content Include="deps\zone.js" />
+    <Content Include="Gruntfile.js" />
+    <Content Include="merges\android\scripts\android2.3-jscompat.js" />
+    <Content Include="merges\android\scripts\platformOverrides.js" />
+    <Folder Include="merges\ios\" />
+    <Content Include="merges\windows\scripts\platformOverrides.js" />
+    <Content Include="merges\windows\scripts\winstore-jscompat.js" />
+    <Folder Include="merges\wp8\" />
+    <Folder Include="res\icons\android\" />
+    <Folder Include="res\icons\ios\" />
+    <Folder Include="res\icons\wp8\" />
+    <Folder Include="res\icons\windows\" />
+    <Folder Include="res\screens\android\" />
+    <Folder Include="res\screens\ios\" />
+    <Folder Include="res\screens\windows\" />
+    <Folder Include="res\screens\wp8\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="index.html" />
+    <Content Include="node_modules\.bin\traceur" />
+    <Content Include="node_modules\.bin\traceur.cmd" />
+    <Content Include="node_modules\grunt-traceur\.npmignore" />
+    <Content Include="node_modules\grunt-traceur\.travis.yml" />
+    <Content Include="node_modules\grunt-traceur\Gruntfile.js" />
+    <Content Include="node_modules\grunt-traceur\lib\compiler.js" />
+    <Content Include="node_modules\grunt-traceur\lib\server.js" />
+    <Content Include="node_modules\grunt-traceur\LICENSE-MIT" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\CHANGELOG.md" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\dist\commonjs\main.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\dist\commonjs\promise\all.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\dist\commonjs\promise\asap.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\dist\commonjs\promise\config.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\dist\commonjs\promise\polyfill.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\dist\commonjs\promise\promise.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\dist\commonjs\promise\race.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\dist\commonjs\promise\reject.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\dist\commonjs\promise\resolve.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\dist\commonjs\promise\utils.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\dist\promise-1.0.0.amd.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\dist\promise-1.0.0.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\dist\promise-1.0.0.min.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\LICENSE" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\package.json" />
+    <Content Include="node_modules\grunt-traceur\node_modules\es6-promise\README.md" />
+    <Content Include="node_modules\grunt-traceur\node_modules\lodash\dist\lodash.compat.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\lodash\dist\lodash.compat.min.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\lodash\dist\lodash.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\lodash\dist\lodash.min.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\lodash\dist\lodash.underscore.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\lodash\dist\lodash.underscore.min.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\lodash\LICENSE.txt" />
+    <Content Include="node_modules\grunt-traceur\node_modules\lodash\lodash.js" />
+    <Content Include="node_modules\grunt-traceur\node_modules\lodash\package.json" />
+    <Content Include="node_modules\grunt-traceur\node_modules\lodash\README.md" />
+    <Content Include="node_modules\grunt-traceur\package.json" />
+    <Content Include="node_modules\grunt-traceur\README.md" />
+    <Content Include="node_modules\grunt-traceur\tasks\traceur.js" />
+    <Content Include="node_modules\grunt-traceur\test\fixtures\args.js" />
+    <Content Include="node_modules\grunt-traceur\test\fixtures\array.js" />
+    <Content Include="node_modules\grunt-traceur\test\fixtures\arrow.js" />
+    <Content Include="node_modules\grunt-traceur\test\fixtures\class.js" />
+    <Content Include="node_modules\grunt-traceur\test\fixtures\destructuring.js" />
+    <Content Include="node_modules\grunt-traceur\test\fixtures\for_of.js" />
+    <Content Include="node_modules\grunt-traceur\test\fixtures\generator.js" />
+    <Content Include="node_modules\grunt-traceur\test\fixtures\module.js" />
+    <Content Include="node_modules\grunt-traceur\test\fixtures\numeric_literal.js" />
+    <Content Include="node_modules\grunt-traceur\test\fixtures\object_initializer.js" />
+    <Content Include="node_modules\grunt-traceur\test\fixtures\template_literal.js" />
+    <Content Include="node_modules\grunt-traceur\test\traceur_test.js" />
+    <Content Include="node_modules\grunt\.npmignore" />
+    <Content Include="node_modules\grunt\appveyor.yml" />
+    <Content Include="node_modules\grunt\CONTRIBUTING.md" />
+    <Content Include="node_modules\grunt\internal-tasks\bump.js" />
+    <Content Include="node_modules\grunt\internal-tasks\subgrunt.js" />
+    <Content Include="node_modules\grunt\lib\grunt.js" />
+    <Content Include="node_modules\grunt\lib\grunt\cli.js" />
+    <Content Include="node_modules\grunt\lib\grunt\config.js" />
+    <Content Include="node_modules\grunt\lib\grunt\event.js" />
+    <Content Include="node_modules\grunt\lib\grunt\fail.js" />
+    <Content Include="node_modules\grunt\lib\grunt\file.js" />
+    <Content Include="node_modules\grunt\lib\grunt\help.js" />
+    <Content Include="node_modules\grunt\lib\grunt\option.js" />
+    <Content Include="node_modules\grunt\lib\grunt\task.js" />
+    <Content Include="node_modules\grunt\lib\grunt\template.js" />
+    <Content Include="node_modules\grunt\lib\util\task.js" />
+    <Content Include="node_modules\grunt\LICENSE-MIT" />
+    <Content Include="node_modules\grunt\node_modules\.bin\cake" />
+    <Content Include="node_modules\grunt\node_modules\.bin\cake.cmd" />
+    <Content Include="node_modules\grunt\node_modules\.bin\coffee" />
+    <Content Include="node_modules\grunt\node_modules\.bin\coffee.cmd" />
+    <Content Include="node_modules\grunt\node_modules\.bin\js-yaml" />
+    <Content Include="node_modules\grunt\node_modules\.bin\js-yaml.cmd" />
+    <Content Include="node_modules\grunt\node_modules\.bin\nopt" />
+    <Content Include="node_modules\grunt\node_modules\.bin\nopt.cmd" />
+    <Content Include="node_modules\grunt\node_modules\.bin\rimraf" />
+    <Content Include="node_modules\grunt\node_modules\.bin\rimraf.cmd" />
+    <Content Include="node_modules\grunt\node_modules\.bin\which" />
+    <Content Include="node_modules\grunt\node_modules\.bin\which.cmd" />
+    <Content Include="node_modules\grunt\node_modules\async\.gitmodules" />
+    <Content Include="node_modules\grunt\node_modules\async\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\async\index.js" />
+    <Content Include="node_modules\grunt\node_modules\async\lib\async.js" />
+    <Content Include="node_modules\grunt\node_modules\async\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\async\Makefile" />
+    <Content Include="node_modules\grunt\node_modules\async\package.json" />
+    <Content Include="node_modules\grunt\node_modules\async\README.md" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\bin\cake" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\bin\coffee" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\CNAME" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\extras\jsl.conf" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\browser.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\cake.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\coffee-script.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\command.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\grammar.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\helpers.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\index.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\lexer.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\nodes.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\optparse.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\parser.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\repl.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\rewriter.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\lib\coffee-script\scope.js" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\package.json" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\Rakefile" />
+    <Content Include="node_modules\grunt\node_modules\coffee-script\README" />
+    <Content Include="node_modules\grunt\node_modules\colors\colors.js" />
+    <Content Include="node_modules\grunt\node_modules\colors\example.html" />
+    <Content Include="node_modules\grunt\node_modules\colors\example.js" />
+    <Content Include="node_modules\grunt\node_modules\colors\MIT-LICENSE.txt" />
+    <Content Include="node_modules\grunt\node_modules\colors\package.json" />
+    <Content Include="node_modules\grunt\node_modules\colors\ReadMe.md" />
+    <Content Include="node_modules\grunt\node_modules\colors\test.js" />
+    <Content Include="node_modules\grunt\node_modules\colors\themes\winston-dark.js" />
+    <Content Include="node_modules\grunt\node_modules\colors\themes\winston-light.js" />
+    <Content Include="node_modules\grunt\node_modules\dateformat\lib\dateformat.js" />
+    <Content Include="node_modules\grunt\node_modules\dateformat\package.json" />
+    <Content Include="node_modules\grunt\node_modules\dateformat\Readme.md" />
+    <Content Include="node_modules\grunt\node_modules\dateformat\test\test_weekofyear.js" />
+    <Content Include="node_modules\grunt\node_modules\dateformat\test\test_weekofyear.sh" />
+    <Content Include="node_modules\grunt\node_modules\eventemitter2\index.js" />
+    <Content Include="node_modules\grunt\node_modules\eventemitter2\lib\eventemitter2.js" />
+    <Content Include="node_modules\grunt\node_modules\eventemitter2\package.json" />
+    <Content Include="node_modules\grunt\node_modules\eventemitter2\README.md" />
+    <Content Include="node_modules\grunt\node_modules\exit\.jshintrc" />
+    <Content Include="node_modules\grunt\node_modules\exit\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\exit\.travis.yml" />
+    <Content Include="node_modules\grunt\node_modules\exit\Gruntfile.js" />
+    <Content Include="node_modules\grunt\node_modules\exit\lib\exit.js" />
+    <Content Include="node_modules\grunt\node_modules\exit\LICENSE-MIT" />
+    <Content Include="node_modules\grunt\node_modules\exit\package.json" />
+    <Content Include="node_modules\grunt\node_modules\exit\README.md" />
+    <Content Include="node_modules\grunt\node_modules\exit\test\exit_test.js" />
+    <Content Include="node_modules\grunt\node_modules\exit\test\fixtures\10-stderr.txt" />
+    <Content Include="node_modules\grunt\node_modules\exit\test\fixtures\10-stdout-stderr.txt" />
+    <Content Include="node_modules\grunt\node_modules\exit\test\fixtures\10-stdout.txt" />
+    <Content Include="node_modules\grunt\node_modules\exit\test\fixtures\100-stderr.txt" />
+    <Content Include="node_modules\grunt\node_modules\exit\test\fixtures\100-stdout-stderr.txt" />
+    <Content Include="node_modules\grunt\node_modules\exit\test\fixtures\100-stdout.txt" />
+    <Content Include="node_modules\grunt\node_modules\exit\test\fixtures\1000-stderr.txt" />
+    <Content Include="node_modules\grunt\node_modules\exit\test\fixtures\1000-stdout-stderr.txt" />
+    <Content Include="node_modules\grunt\node_modules\exit\test\fixtures\1000-stdout.txt" />
+    <Content Include="node_modules\grunt\node_modules\exit\test\fixtures\create-files.sh" />
+    <Content Include="node_modules\grunt\node_modules\exit\test\fixtures\log-broken.js" />
+    <Content Include="node_modules\grunt\node_modules\exit\test\fixtures\log.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\.jshintrc" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\.travis.yml" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\Gruntfile.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\lib\findup-sync.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\LICENSE-MIT" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\.travis.yml" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\examples\g.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\examples\usr-local.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\glob.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\inherits\inherits.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\inherits\inherits_browser.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\inherits\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\inherits\package.json" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\inherits\README.md" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\inherits\test.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\minimatch.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\CONTRIBUTORS" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\lib\lru-cache.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\package.json" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\README.md" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\test\basic.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\test\foreach.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\lru-cache\test\memory-leak.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\sigmund\bench.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\sigmund\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\sigmund\package.json" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\sigmund\README.md" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\sigmund\sigmund.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\node_modules\sigmund\test\basic.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\package.json" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\README.md" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\test\basic.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\test\brace-expand.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\test\caching.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\test\defaults.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\node_modules\minimatch\test\extglob-ending-with-state-char.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\package.json" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\README.md" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\00-setup.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\bash-comparison.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\bash-results.json" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\cwd-test.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\globstar-match.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\mark.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\new-glob-optional-options.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\nocase-nomagic.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\pause-resume.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\readme-issue.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\root-nomount.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\root.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\stat.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\glob\test\zz-cleanup.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\lodash\dist\lodash.compat.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\lodash\dist\lodash.compat.min.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\lodash\dist\lodash.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\lodash\dist\lodash.min.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\lodash\dist\lodash.underscore.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\lodash\dist\lodash.underscore.min.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\lodash\LICENSE.txt" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\lodash\lodash.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\lodash\package.json" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\node_modules\lodash\README.md" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\package.json" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\README.md" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\test\findup-sync_test.js" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\test\fixtures\a.txt" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\test\fixtures\aaa.txt" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\test\fixtures\a\b\bar.txt" />
+    <Content Include="node_modules\grunt\node_modules\findup-sync\test\fixtures\a\foo.txt" />
+    <Content Include="node_modules\grunt\node_modules\getobject\.jshintrc" />
+    <Content Include="node_modules\grunt\node_modules\getobject\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\getobject\.travis.yml" />
+    <Content Include="node_modules\grunt\node_modules\getobject\Gruntfile.js" />
+    <Content Include="node_modules\grunt\node_modules\getobject\lib\getobject.js" />
+    <Content Include="node_modules\grunt\node_modules\getobject\LICENSE-MIT" />
+    <Content Include="node_modules\grunt\node_modules\getobject\package.json" />
+    <Content Include="node_modules\grunt\node_modules\getobject\README.md" />
+    <Content Include="node_modules\grunt\node_modules\getobject\test\namespace_test.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\glob\.travis.yml" />
+    <Content Include="node_modules\grunt\node_modules\glob\examples\g.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\examples\usr-local.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\glob.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\glob\node_modules\graceful-fs\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\glob\node_modules\graceful-fs\graceful-fs.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\node_modules\graceful-fs\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\glob\node_modules\graceful-fs\package.json" />
+    <Content Include="node_modules\grunt\node_modules\glob\node_modules\graceful-fs\README.md" />
+    <Content Include="node_modules\grunt\node_modules\glob\node_modules\graceful-fs\test\open.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\node_modules\graceful-fs\test\ulimit.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\node_modules\inherits\inherits.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\node_modules\inherits\package.json" />
+    <Content Include="node_modules\grunt\node_modules\glob\node_modules\inherits\README.md" />
+    <Content Include="node_modules\grunt\node_modules\glob\package.json" />
+    <Content Include="node_modules\grunt\node_modules\glob\README.md" />
+    <Content Include="node_modules\grunt\node_modules\glob\test\00-setup.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\test\bash-comparison.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\test\bash-results.json" />
+    <Content Include="node_modules\grunt\node_modules\glob\test\cwd-test.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\test\mark.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\test\nocase-nomagic.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\test\pause-resume.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\test\root-nomount.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\test\root.js" />
+    <Content Include="node_modules\grunt\node_modules\glob\test\zz-cleanup.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\.jshintrc" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\.travis.yml" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\examples.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\Gruntfile.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\index.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\LICENSE-MIT" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\lodash\dist\lodash.compat.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\lodash\dist\lodash.compat.min.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\lodash\dist\lodash.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\lodash\dist\lodash.min.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\lodash\dist\lodash.underscore.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\lodash\dist\lodash.underscore.min.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\lodash\LICENSE.txt" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\lodash\lodash.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\lodash\package.json" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\lodash\README.md" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\.travis.yml" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\component.json" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\dist\underscore.string.min.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\Gemfile" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\Gemfile.lock" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\libpeerconnection.log" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\lib\underscore.string.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\package.json" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\Rakefile" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\README.markdown" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\run-qunit.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\speed.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\strings.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\strings_standalone.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test.html" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test_standalone.html" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test_underscore\arrays.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test_underscore\chaining.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test_underscore\collections.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test_underscore\functions.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test_underscore\index.html" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test_underscore\objects.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test_underscore\speed.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test_underscore\utility.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test_underscore\vendor\jquery.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test_underscore\vendor\jslitmus.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test_underscore\vendor\qunit.css" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\test_underscore\vendor\qunit.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\node_modules\underscore.string\test\underscore.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\package.json" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\README.md" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-log\test\index.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\.jshintrc" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\.travis.yml" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\Gruntfile.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\index.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\LICENSE-MIT" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\package.json" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\README.md" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\test\fixtures\exec.cmd" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\test\fixtures\exec.sh" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\test\fixtures\Gruntfile-execArgv-child.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\test\fixtures\Gruntfile-execArgv.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\test\fixtures\Gruntfile-print-text.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\test\fixtures\spawn-multibyte.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\test\fixtures\spawn.js" />
+    <Content Include="node_modules\grunt\node_modules\grunt-legacy-util\test\index.js" />
+    <Content Include="node_modules\grunt\node_modules\hooker\child.js" />
+    <Content Include="node_modules\grunt\node_modules\hooker\dist\ba-hooker.js" />
+    <Content Include="node_modules\grunt\node_modules\hooker\dist\ba-hooker.min.js" />
+    <Content Include="node_modules\grunt\node_modules\hooker\grunt.js" />
+    <Content Include="node_modules\grunt\node_modules\hooker\lib\hooker.js" />
+    <Content Include="node_modules\grunt\node_modules\hooker\LICENSE-MIT" />
+    <Content Include="node_modules\grunt\node_modules\hooker\package.json" />
+    <Content Include="node_modules\grunt\node_modules\hooker\parent.js" />
+    <Content Include="node_modules\grunt\node_modules\hooker\README.md" />
+    <Content Include="node_modules\grunt\node_modules\hooker\test\hooker_test.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\.travis.yml" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\encodings\big5.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\encodings\gbk.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\encodings\singlebyte.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\encodings\table\big5.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\encodings\table\gbk.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\generation\generate-big5-table.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\generation\generate-singlebyte.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\index.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\package.json" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\README.md" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\README.md~" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\test\big5-test.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\test\big5File.txt" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\test\cyrillic-test.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\test\gbk-test.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\test\gbkFile.txt" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\test\greek-test.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\test\main-test.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\test\performance.js" />
+    <Content Include="node_modules\grunt\node_modules\iconv-lite\test\turkish-test.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\bin\js-yaml.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\examples\custom_types.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\examples\custom_types.yaml" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\examples\dumper.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\examples\dumper.json" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\examples\sample_document.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\examples\sample_document.yaml" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\HISTORY.md" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\index.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\common.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\dumper.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\exception.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\loader.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\mark.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\require.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\schema.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\schema\default.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\schema\minimal.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\schema\safe.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\binary.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\bool.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\float.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\int.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\js\function.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\js\regexp.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\js\undefined.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\map.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\merge.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\null.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\omap.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\pairs.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\seq.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\set.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\str.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\lib\js-yaml\type\timestamp.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\.bin\esparse" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\.bin\esparse.cmd" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\.bin\esvalidate" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\.bin\esvalidate.cmd" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\examples\arguments.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\examples\choice.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\examples\constants.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\examples\help.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\examples\nargs.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\examples\parents.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\examples\prefix_chars.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\examples\sub_commands.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\examples\sum.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\examples\testformatters.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\HISTORY.md" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\index.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\action.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\action\append.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\action\append\constant.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\action\count.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\action\help.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\action\store.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\action\store\constant.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\action\store\false.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\action\store\true.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\action\subparsers.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\action\version.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\action_container.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\argparse.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\argument\error.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\argument\exclusive.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\argument\group.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\argument_parser.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\const.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\help\added_formatters.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\help\formatter.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\lib\namespace.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore.string\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore.string\.travis.yml" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore.string\bower.json" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore.string\component.json" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore.string\foo.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore.string\gulpfile.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore.string\libpeerconnection.log" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore.string\lib\underscore.string.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore.string\package.json" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore.string\README.markdown" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore\package.json" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore\README.md" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore\underscore-min.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\node_modules\underscore\underscore.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\package.json" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\argparse\README.md" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\esprima\bin\esparse.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\esprima\bin\esvalidate.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\esprima\esprima.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\esprima\package.json" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\esprima\README.md" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\esprima\test\compat.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\esprima\test\reflect.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\esprima\test\run.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\esprima\test\runner.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\node_modules\esprima\test\test.js" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\package.json" />
+    <Content Include="node_modules\grunt\node_modules\js-yaml\README.md" />
+    <Content Include="node_modules\grunt\node_modules\lodash\lodash.js" />
+    <Content Include="node_modules\grunt\node_modules\lodash\lodash.min.js" />
+    <Content Include="node_modules\grunt\node_modules\lodash\lodash.underscore.js" />
+    <Content Include="node_modules\grunt\node_modules\lodash\lodash.underscore.min.js" />
+    <Content Include="node_modules\grunt\node_modules\lodash\package.json" />
+    <Content Include="node_modules\grunt\node_modules\lodash\README.md" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\minimatch.js" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\lru-cache\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\lru-cache\CONTRIBUTORS" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\lru-cache\lib\lru-cache.js" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\lru-cache\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\lru-cache\package.json" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\lru-cache\README.md" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\lru-cache\test\basic.js" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\lru-cache\test\foreach.js" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\lru-cache\test\memory-leak.js" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\sigmund\bench.js" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\sigmund\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\sigmund\package.json" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\sigmund\README.md" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\sigmund\sigmund.js" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\node_modules\sigmund\test\basic.js" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\package.json" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\README.md" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\test\basic.js" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\test\brace-expand.js" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\test\caching.js" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\test\defaults.js" />
+    <Content Include="node_modules\grunt\node_modules\minimatch\test\extglob-ending-with-state-char.js" />
+    <Content Include="node_modules\grunt\node_modules\nopt\.npmignore" />
+    <Content Include="node_modules\grunt\node_modules\nopt\bin\nopt.js" />
+    <Content Include="node_modules\grunt\node_modules\nopt\examples\my-program.js" />
+    <Content Include="node_modules\grunt\node_modules\nopt\lib\nopt.js" />
+    <Content Include="node_modules\grunt\node_modules\nopt\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\nopt\node_modules\abbrev\abbrev.js" />
+    <Content Include="node_modules\grunt\node_modules\nopt\node_modules\abbrev\CONTRIBUTING.md" />
+    <Content Include="node_modules\grunt\node_modules\nopt\node_modules\abbrev\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\nopt\node_modules\abbrev\package.json" />
+    <Content Include="node_modules\grunt\node_modules\nopt\node_modules\abbrev\README.md" />
+    <Content Include="node_modules\grunt\node_modules\nopt\node_modules\abbrev\test.js" />
+    <Content Include="node_modules\grunt\node_modules\nopt\package.json" />
+    <Content Include="node_modules\grunt\node_modules\nopt\README.md" />
+    <Content Include="node_modules\grunt\node_modules\rimraf\AUTHORS" />
+    <Content Include="node_modules\grunt\node_modules\rimraf\bin.js" />
+    <Content Include="node_modules\grunt\node_modules\rimraf\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\rimraf\package.json" />
+    <Content Include="node_modules\grunt\node_modules\rimraf\README.md" />
+    <Content Include="node_modules\grunt\node_modules\rimraf\rimraf.js" />
+    <Content Include="node_modules\grunt\node_modules\rimraf\test\run.sh" />
+    <Content Include="node_modules\grunt\node_modules\rimraf\test\setup.sh" />
+    <Content Include="node_modules\grunt\node_modules\rimraf\test\test-async.js" />
+    <Content Include="node_modules\grunt\node_modules\rimraf\test\test-sync.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\.travis.yml" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\dist\underscore.string.min.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\Gemfile" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\Gemfile.lock" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\lib\underscore.string.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\package.json" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\Rakefile" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\README.markdown" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\run-qunit.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\speed.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\strings.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\strings_standalone.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test.html" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_standalone.html" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\arrays.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\chaining.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\collections.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\functions.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\objects.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\speed.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\temp.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\temp_tests.html" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\test.html" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\utility.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\vendor\jquery.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\vendor\jslitmus.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\vendor\qunit.css" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\test_underscore\vendor\qunit.js" />
+    <Content Include="node_modules\grunt\node_modules\underscore.string\test\underscore.js" />
+    <Content Include="node_modules\grunt\node_modules\which\bin\which" />
+    <Content Include="node_modules\grunt\node_modules\which\LICENSE" />
+    <Content Include="node_modules\grunt\node_modules\which\package.json" />
+    <Content Include="node_modules\grunt\node_modules\which\README.md" />
+    <Content Include="node_modules\grunt\node_modules\which\which.js" />
+    <Content Include="node_modules\grunt\package.json" />
+    <Content Include="node_modules\grunt\README.md" />
+    <Content Include="node_modules\traceur\bin\traceur-runtime.js" />
+    <Content Include="node_modules\traceur\bin\traceur.js" />
+    <Content Include="node_modules\traceur\LICENSE" />
+    <Content Include="node_modules\traceur\node_modules\.bin\semver" />
+    <Content Include="node_modules\traceur\node_modules\.bin\semver.cmd" />
+    <Content Include="node_modules\traceur\node_modules\commander\History.md" />
+    <Content Include="node_modules\traceur\node_modules\commander\index.js" />
+    <Content Include="node_modules\traceur\node_modules\commander\package.json" />
+    <Content Include="node_modules\traceur\node_modules\commander\Readme.md" />
+    <Content Include="node_modules\traceur\node_modules\glob\common.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\glob.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\LICENSE" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inflight\.eslintrc" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inflight\inflight.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inflight\LICENSE" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inflight\node_modules\wrappy\LICENSE" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inflight\node_modules\wrappy\package.json" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inflight\node_modules\wrappy\README.md" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inflight\node_modules\wrappy\test\basic.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inflight\node_modules\wrappy\wrappy.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inflight\package.json" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inflight\README.md" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inflight\test.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inherits\inherits.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inherits\inherits_browser.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inherits\LICENSE" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inherits\package.json" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inherits\README.md" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\inherits\test.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\.npmignore" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\.travis.yml" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\benchmark.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\browser.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\LICENSE" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\minimatch.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\.npmignore" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\.travis.yml" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\example.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\index.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\.npmignore" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\.travis.yml" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\example.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\index.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\Makefile" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\package.json" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\README.md" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\balanced-match\test\balanced.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\.travis.yml" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\example\map.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\index.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\LICENSE" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\package.json" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\README.markdown" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\node_modules\concat-map\test\map.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\package.json" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\README.md" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\bash-comparison.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\bash-results.txt" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\cases.txt" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\dollar.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\empty-option.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\generate.sh" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\negative-increment.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\nested.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\order.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\pad.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\same-type.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\node_modules\brace-expansion\test\sequence.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\package.json" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\README.md" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\test\basic.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\test\brace-expand.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\test\defaults.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\minimatch\test\extglob-ending-with-state-char.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\once\LICENSE" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\once\node_modules\wrappy\LICENSE" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\once\node_modules\wrappy\package.json" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\once\node_modules\wrappy\README.md" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\once\node_modules\wrappy\test\basic.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\once\node_modules\wrappy\wrappy.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\once\once.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\once\package.json" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\once\README.md" />
+    <Content Include="node_modules\traceur\node_modules\glob\node_modules\once\test\once.js" />
+    <Content Include="node_modules\traceur\node_modules\glob\package.json" />
+    <Content Include="node_modules\traceur\node_modules\glob\README.md" />
+    <Content Include="node_modules\traceur\node_modules\glob\sync.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\dist\rsvp.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\dist\rsvp.min.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\dist\test\browserify.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\dist\test\index.html" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\dist\test\json3.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\dist\test\mocha.css" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\dist\test\mocha.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\dist\test\rsvp.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\dist\test\rsvp.min.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\dist\test\worker.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp.umd.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\-internal.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\all-settled.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\all.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\asap.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\config.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\defer.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\enumerator.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\events.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\filter.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\hash-settled.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\hash.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\instrument.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\map.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\node.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\promise-hash.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\promise.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\promise\all.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\promise\race.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\promise\reject.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\promise\resolve.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\race.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\reject.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\resolve.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\rethrow.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\lib\rsvp\utils.js" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\package.json" />
+    <Content Include="node_modules\traceur\node_modules\rsvp\README.md" />
+    <Content Include="node_modules\traceur\node_modules\semver\.npmignore" />
+    <Content Include="node_modules\traceur\node_modules\semver\bin\semver" />
+    <Content Include="node_modules\traceur\node_modules\semver\foot.js" />
+    <Content Include="node_modules\traceur\node_modules\semver\head.js" />
+    <Content Include="node_modules\traceur\node_modules\semver\LICENSE" />
+    <Content Include="node_modules\traceur\node_modules\semver\Makefile" />
+    <Content Include="node_modules\traceur\node_modules\semver\package.json" />
+    <Content Include="node_modules\traceur\node_modules\semver\README.md" />
+    <Content Include="node_modules\traceur\node_modules\semver\semver.browser.js" />
+    <Content Include="node_modules\traceur\node_modules\semver\semver.browser.js.gz" />
+    <Content Include="node_modules\traceur\node_modules\semver\semver.js" />
+    <Content Include="node_modules\traceur\node_modules\semver\semver.min.js" />
+    <Content Include="node_modules\traceur\node_modules\semver\semver.min.js.gz" />
+    <Content Include="node_modules\traceur\node_modules\semver\test\amd.js" />
+    <Content Include="node_modules\traceur\node_modules\semver\test\gtr.js" />
+    <Content Include="node_modules\traceur\node_modules\semver\test\index.js" />
+    <Content Include="node_modules\traceur\node_modules\semver\test\ltr.js" />
+    <Content Include="node_modules\traceur\node_modules\semver\test\no-module.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\.npmignore" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\amd-test\browser-source-map-support.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\amd-test\index.html" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\amd-test\require.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\amd-test\script.coffee" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\amd-test\script.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\amd-test\script.map" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\browser-source-map-support.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\browser-test\index.html" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\browser-test\script.coffee" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\browser-test\script.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\browser-test\script.map" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\build.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\header-test\index.html" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\header-test\script.coffee" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\header-test\script.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\header-test\script.map" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\header-test\server.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\LICENSE.md" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\.npmignore" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\.travis.yml" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\build\assert-shim.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\build\mini-require.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\build\prefix-source-map.jsm" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\build\prefix-utils.jsm" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\build\suffix-browser.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\build\suffix-source-map.jsm" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\build\suffix-utils.jsm" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\build\test-prefix.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\build\test-suffix.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\CHANGELOG.md" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\lib\source-map.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\lib\source-map\array-set.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\lib\source-map\base64-vlq.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\lib\source-map\base64.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\lib\source-map\binary-search.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\lib\source-map\source-map-consumer.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\lib\source-map\source-map-generator.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\lib\source-map\source-node.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\lib\source-map\util.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\LICENSE" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\Makefile.dryice.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\node_modules\amdefine\amdefine.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\node_modules\amdefine\intercept.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\node_modules\amdefine\LICENSE" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\node_modules\amdefine\package.json" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\node_modules\amdefine\README.md" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\package.json" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\README.md" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\test\run-tests.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\test\source-map\test-api.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\test\source-map\test-array-set.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\test\source-map\test-base64-vlq.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\test\source-map\test-base64.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\test\source-map\test-binary-search.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\test\source-map\test-dog-fooding.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\test\source-map\test-source-map-consumer.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\test\source-map\test-source-map-generator.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\test\source-map\test-source-node.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\node_modules\source-map\test\source-map\util.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\package.json" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\README.md" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\source-map-support.js" />
+    <Content Include="node_modules\traceur\node_modules\source-map-support\test.js" />
+    <Content Include="node_modules\traceur\package.json" />
+    <Content Include="node_modules\traceur\README.md" />
+    <Content Include="node_modules\traceur\src\node\api.js" />
+    <Content Include="node_modules\traceur\src\node\command.js" />
+    <Content Include="node_modules\traceur\src\node\compileAllJsFilesInDir.js" />
+    <Content Include="node_modules\traceur\src\node\deferred.js" />
+    <Content Include="node_modules\traceur\src\node\file-util.js" />
+    <Content Include="node_modules\traceur\src\node\getopt.js" />
+    <Content Include="node_modules\traceur\src\node\interpreter.js" />
+    <Content Include="node_modules\traceur\src\node\NodeCompiler.js" />
+    <Content Include="node_modules\traceur\src\node\nodeLoader.js" />
+    <Content Include="node_modules\traceur\src\node\recursiveModuleCompile.js" />
+    <Content Include="node_modules\traceur\src\node\require.js" />
+    <Content Include="node_modules\traceur\src\node\System.js" />
+    <Content Include="node_modules\traceur\src\node\to-amd-compiler.js" />
+    <Content Include="node_modules\traceur\src\node\to-closure-compiler.js" />
+    <Content Include="node_modules\traceur\src\node\to-commonjs-compiler.js" />
+    <Content Include="node_modules\traceur\src\node\traceur.js" />
+    <Content Include="node_modules\traceur\traceur" />
+    <Content Include="scripts\index.js" />
+    <Content Include="scripts\platformOverrides.js" />
+    <Content Include="css\index.css" />
+    <Content Include="res\icons\android\icon-36-ldpi.png" />
+    <Content Include="res\icons\android\icon-48-mdpi.png" />
+    <Content Include="res\icons\android\icon-72-hdpi.png" />
+    <Content Include="res\icons\android\icon-96-xhdpi.png" />
+    <Content Include="res\icons\ios\icon-40.png" />
+    <Content Include="res\icons\ios\icon-40-2x.png" />
+    <Content Include="res\icons\ios\icon-50.png" />
+    <Content Include="res\icons\ios\icon-50-2x.png" />
+    <Content Include="res\icons\ios\icon-57.png" />
+    <Content Include="res\icons\ios\icon-57-2x.png" />
+    <Content Include="res\icons\ios\icon-60.png" />
+    <Content Include="res\icons\ios\icon-60-2x.png" />
+    <Content Include="res\icons\ios\icon-72.png" />
+    <Content Include="res\icons\ios\icon-72-2x.png" />
+    <Content Include="res\icons\ios\icon-76.png" />
+    <Content Include="res\icons\ios\icon-76-2x.png" />
+    <Content Include="res\icons\ios\icon-small.png" />
+    <Content Include="res\icons\ios\icon-small-2x.png" />
+    <Content Include="res\icons\windows\logo.png" />
+    <Content Include="res\icons\windows\smalllogo.png" />
+    <Content Include="res\icons\windows\Square150x150Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square44x44Logo.scale-240.png" />
+    <Content Include="res\icons\windows\Square71x71Logo.scale-240.png" />
+    <Content Include="res\icons\windows\storelogo.png" />
+    <Content Include="res\icons\windows\StoreLogo.scale-240.png" />
+    <Content Include="res\icons\windows\Wide310x150Logo.scale-240.png" />
+    <Content Include="res\icons\wp8\icon-62-tile.png" />
+    <Content Include="res\icons\wp8\icon-173-tile.png" />
+    <Content Include="res\native\android\ant.properties" />
+    <Content Include="res\screens\android\screen-hdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-hdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-ldpi-landscape.png" />
+    <Content Include="res\screens\android\screen-ldpi-portrait.png" />
+    <Content Include="res\screens\android\screen-mdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-mdpi-portrait.png" />
+    <Content Include="res\screens\android\screen-xhdpi-landscape.png" />
+    <Content Include="res\screens\android\screen-xhdpi-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape.png" />
+    <Content Include="res\screens\ios\screen-ipad-landscape-2x.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait.png" />
+    <Content Include="res\screens\ios\screen-ipad-portrait-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-568h-2x.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait.png" />
+    <Content Include="res\screens\ios\screen-iphone-portrait-2x.png" />
+    <Content Include="res\screens\windows\splashscreen.png" />
+    <Content Include="res\screens\windows\SplashScreen.scale-240.png" />
+    <Content Include="res\screens\wp8\screen-portrait.jpg" />
+  </ItemGroup>
+  <PropertyGroup>
+    <TypeScriptToolsVersion>1.1</TypeScriptToolsVersion>
+    <DefaultReferenceGroup>Implicit (Multi-Device Apps)</DefaultReferenceGroup>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>true</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Distribution'">
+    <TypeScriptCompileOnSaveEnabled>false</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.MDA.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\CordovaTools\vs-mda-targets\Microsoft.TypeScript.MDA.targets" />
+  <PropertyGroup>
+    <ProjectUISubcaption>Tools for Apache Cordova</ProjectUISubcaption>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetPlatformIdentifier>MDD</TargetPlatformIdentifier>
+  </PropertyGroup>
+  <Target Name="EnsureBuildPrerequisites">
+    <!-- These errors will trigger if building from inside Visual Studio and requirements could not be determined -->
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(NodeJsDir) == ''" Text="Path to NodeJs could not be determined. Please check that NodeJs has been installed." />
+    <Error Condition="$(MDAPropertiesEvaluated) == 'true' And $(MDAVsixDir) == ''" Text="Path to the Visual Studio Extension for Tools for Apache Cordova could not be determined. Please check that the extension has been installed." />
+    <!-- These errors will trigger if building from outside Visual Studio (e.g. command line) and environment variables have not been set -->
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(NodeJsDir) == ''" Text="Path to NodeJs has not been specified. Please check that NodeJs has been installed and set the NodeJsDir environment variable before building." />
+    <Error Condition="$(MDAPropertiesEvaluated) == '' And $(MDAVsixDir) == ''" Text="Path to Visual Studio Extension for Tools for Apache Cordova has not been specified. Please install it and set the MDAVsixDir environment variable before building." />
+    <!-- Sanity check that things exist in the specified places. These are more likely to fail if building outside Visual Studio and the required environment variables have not been set, or set incorrectly. -->
+    <Error Condition="!Exists('$(NodeJsDir)') Or !Exists('$(NodeJsDir)\node.exe')" Text="The specified NodeJs directory $(NodeJsDir) either does not exist, or does not contain node.exe. Please check that NodeJs has been installed, and set the NodeJsDir variable to the correct directory." />
+    <Error Condition="!Exists('$(MDAVsixDir)') Or !Exists('$(MDAVsixDir)\packages\vs-mda')" Text="The specified directory to the Visual Studio extension $(MDAVsixDir)\node.exe either does not exist, or does not contain a packages\vs-mda sub-directory. Please check that the extension directory exists and set the MDAVsixDir variable to the correct directory." />
+    <!-- Installs (if necessary) the supporting Nodejs module -->
+    <Exec Command="&quot;$(MDAVsixDir)&quot;\packages\vs-mda\install &quot;$(NodeJsDir)&quot; &quot;$(MDAVsixDir)&quot;\packages\vs-mda" />
+  </Target>
+</Project>

@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>cordovaangulartwo</title>
+
+    <!-- cordovaangulartwo references -->
+    <link href="css/index.css" rel="stylesheet" />
+</head>
+<body>
+    <cordova-angular2>
+        Revolving.....Revolving...
+    </cordova-angular2>
+
+    <!-- Cordova reference, this is added to your app when it's built. -->
+    <script src="cordova.js"></script>
+    <script src="scripts/platformOverrides.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="deps/traceur.js"></script>
+    <script src="deps/system.js"></script>
+
+    <script src="deps/zone.js"></script>
+    <script src="deps/long-stack-trace-zone.js"></script>
+
+    <script>
+    System.paths = {
+      /*'*':'/ng/*.js',*/
+      'di':'components/angular/di',
+      'start_cordova_angular2': 'scripts/start.js'
+    };
+    System.import('start_cordova_angular2').then(function (module) {
+      module.main();
+    }, console.log.bind(console));
+    </script>
+</body>
+</html>

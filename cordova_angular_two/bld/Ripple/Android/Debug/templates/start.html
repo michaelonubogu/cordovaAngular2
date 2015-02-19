@@ -1,0 +1,11 @@
+﻿<section id="greeting_section">
+    <h3>Press a button to say a greeting</h3>
+    <button id="say-hello" (click)="sayHello($event)"></button><br>
+    <button id="say-goodbye" (click)="sayGoodBye($event)"></button><br>
+</section>
+<br><br><br />
+
+<div>
+    <h1>{{hello_message}}</h1>
+    <h1>{{goodbye_message}}</h1>
+</div>
